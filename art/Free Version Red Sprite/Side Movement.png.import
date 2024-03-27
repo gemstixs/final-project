@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tavk4sc7pfid"
-path="res://.godot/imported/terrain tiles.png-5a19c535e0aa8d1d359cee937a9e1db0.ctex"
+uid="uid://db6cb5orrb8kx"
+path="res://.godot/imported/Side Movement.png-4b14d0a108b2e94849ab999466e79475.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://terrain/PixelWoods/Seasons/spring/terrain tiles.png"
-dest_files=["res://.godot/imported/terrain tiles.png-5a19c535e0aa8d1d359cee937a9e1db0.ctex"]
+source_file="res://art/Free Version Red Sprite/Side Movement.png"
+dest_files=["res://.godot/imported/Side Movement.png-4b14d0a108b2e94849ab999466e79475.ctex"]
 
 [params]
 

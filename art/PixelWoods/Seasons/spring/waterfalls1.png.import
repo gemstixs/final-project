@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1ekgm8cvmfu5"
-path="res://.godot/imported/waterfalls1.png-37bef9766cfaa93e99f1c2680eec1997.ctex"
+path="res://.godot/imported/waterfalls1.png-c7cd96621aa552912d588ac041e87bda.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://terrain/PixelWoods/Seasons/spring/waterfalls1.png"
-dest_files=["res://.godot/imported/waterfalls1.png-37bef9766cfaa93e99f1c2680eec1997.ctex"]
+source_file="res://art/PixelWoods/Seasons/spring/waterfalls1.png"
+dest_files=["res://.godot/imported/waterfalls1.png-c7cd96621aa552912d588ac041e87bda.ctex"]
 
 [params]
 

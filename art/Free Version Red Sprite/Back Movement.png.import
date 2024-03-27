@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cf6u1iq1x24sx"
-path="res://.godot/imported/terrain tiles.png-90c12e86d6e891bb7dd54a316c5cf957.ctex"
+uid="uid://cggjk7yjqi8ts"
+path="res://.godot/imported/Back Movement.png-ef7e1f584058b48766d7f05187450e7e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://terrain/PixelWoods/Terrain(main)/terrain tiles.png"
-dest_files=["res://.godot/imported/terrain tiles.png-90c12e86d6e891bb7dd54a316c5cf957.ctex"]
+source_file="res://art/Free Version Red Sprite/Back Movement.png"
+dest_files=["res://.godot/imported/Back Movement.png-ef7e1f584058b48766d7f05187450e7e.ctex"]
 
 [params]
 
