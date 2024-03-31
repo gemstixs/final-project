@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://blkik506qixfj"]
+
+[ext_resource type="Script" path="res://resources/ResourceNode.gd" id="1_0q0nn"]
+[ext_resource type="Texture2D" uid="uid://ppsk6e7ra72p" path="res://art/rocky objects/Objects_separately/Dragon_bones_full_ground_shadow.png" id="1_ruif3"]
+
+[node name="dragon" type="StaticBody2D"]
+script = ExtResource("1_0q0nn")
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="."]
+position = Vector2(214, -205)
+scale = Vector2(0.664062, 0.691406)
+polygon = PackedVector2Array(33.1294, -17.356, 58.7294, -17.356, 78.3058, -20.2486, 94.8705, -14.4633, 96.3764, -4.33899, 66.2588, 4.33896, 51.2, 14.4633, 43.6705, 31.8192, 60.2352, 21.6949, 91.8588, 14.4633, 105.412, 1.44632, 99.3882, -18.8023, 84.3293, -27.4803, 69.2705, -30.3729, 54.2117, -28.9266)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+position = Vector2(214, -205)
+scale = Vector2(0.664062, 0.691406)
+polygon = PackedVector2Array(-103.906, -2.89267, -102.4, -26.0339, -85.8353, -46.2825, -84.3295, -40.4972, -94.8706, -28.9266, -88.8471, -30.3729, -84.3295, -27.4803, -79.8118, -33.2656, -75.2942, -34.7119, -66.2589, -40.4972, -63.2471, -34.7119, -64.753, -30.3729, -55.7177, -31.8192, -48.1883, -34.7119, -37.6471, -41.9435, -22.5883, -43.3898, -13.553, -43.3898, -6.02356, -40.4972, -1.50592, -39.0509, 3.01172, -34.7119, 9.03525, -30.3729, 13.5529, -26.0339, 19.5764, -20.2486, 12.047, -15.9096, 1.50583, -14.4633, -7.52945, -11.5706, -22.5883, -8.67798, -43.6706, -11.5706, -58.7295, -15.9096, -78.3059, -17.356, -85.8353, -11.5706)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-49, 16)
+polygon = PackedVector2Array(326, -272, 302, -280, 285, -281, 261, -275, 243, -259, 239, -257, 238, -260, 235, -262, 234, -256, 239, -253, 255, -254, 261, -255, 273, -257, 283, -254, 283, -256, 272, -260, 259, -257, 251, -257, 271, -265, 291, -263, 305, -255, 308, -256, 295, -265, 272, -269, 247, -257, 261, -272, 289, -278)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(213, -211, 228, -204, 230, -200, 208, -195, 184, -198, 201, -186, 221, -184, 241, -188, 227, -182, 200, -182, 177, -200, 197, -175, 219, -162, 239, -158, 219, -158, 194, -173, 173, -199, 185, -168, 200, -147, 197, -145, 182, -163, 171, -194, 169, -203, 166, -207, 164, -206, 162, -202, 161, -207, 165, -210, 168, -209, 172, -205, 181, -204, 223, -203)
+
+[node name="DragonBonesFullGroundShadow" type="Sprite2D" parent="."]
+position = Vector2(214, -205)
+scale = Vector2(0.664062, 0.691406)
+texture = ExtResource("1_ruif3")

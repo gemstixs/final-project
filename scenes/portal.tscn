@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxbvqlv4jxpd8"]
+
+[ext_resource type="Texture2D" uid="uid://oeps5muv4m4o" path="res://art/forest-objects/PNG/Assets/Living gazebo2.png" id="1_ur0eq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5yurb"]
+size = Vector2(47, 33)
+
+[node name="portal" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(19.5, -102.5)
+shape = SubResource("RectangleShape2D_5yurb")
+
+[node name="LivingGazebo2" type="Sprite2D" parent="."]
+position = Vector2(21, -131)
+texture = ExtResource("1_ur0eq")

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3l3ts1cv3l8c"]
+
+[ext_resource type="Texture2D" uid="uid://hda0p504d611" path="res://art/forest-objects/PNG/Assets/Luminous_tree1.png" id="1_1bwfy"]
+[ext_resource type="Script" path="res://resources/ResourceNode.gd" id="1_bdhop"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3wspk"]
+radius = 16.0
+height = 44.0
+
+[node name="sprite tree" type="StaticBody2D"]
+position = Vector2(173, 66)
+script = ExtResource("1_bdhop")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 24)
+shape = SubResource("CapsuleShape2D_3wspk")
+
+[node name="LuminousTree1" type="Sprite2D" parent="."]
+position = Vector2(2, 2)
+texture = ExtResource("1_1bwfy")
