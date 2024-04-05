@@ -12,11 +12,11 @@ position = Vector2(2, 1)
 scale = Vector2(0.75, 0.75)
 script = ExtResource("1_ix6uo")
 
+[node name="CauryPearl2GroundShadow" type="Sprite2D" parent="."]
+texture = ExtResource("1_hlq0s")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.33333, -1.33334)
 shape = SubResource("CapsuleShape2D_nfa3d")
-
-[node name="CauryPearl2GroundShadow" type="Sprite2D" parent="."]
-texture = ExtResource("1_hlq0s")
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]

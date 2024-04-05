@@ -6,6 +6,11 @@
 [node name="dragon" type="StaticBody2D"]
 script = ExtResource("1_0q0nn")
 
+[node name="DragonBonesFullGroundShadow" type="Sprite2D" parent="."]
+position = Vector2(214, -205)
+scale = Vector2(0.664062, 0.691406)
+texture = ExtResource("1_ruif3")
+
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="."]
 position = Vector2(214, -205)
 scale = Vector2(0.664062, 0.691406)
@@ -22,8 +27,3 @@ polygon = PackedVector2Array(326, -272, 302, -280, 285, -281, 261, -275, 243, -2
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(213, -211, 228, -204, 230, -200, 208, -195, 184, -198, 201, -186, 221, -184, 241, -188, 227, -182, 200, -182, 177, -200, 197, -175, 219, -162, 239, -158, 219, -158, 194, -173, 173, -199, 185, -168, 200, -147, 197, -145, 182, -163, 171, -194, 169, -203, 166, -207, 164, -206, 162, -202, 161, -207, 165, -210, 168, -209, 172, -205, 181, -204, 223, -203)
-
-[node name="DragonBonesFullGroundShadow" type="Sprite2D" parent="."]
-position = Vector2(214, -205)
-scale = Vector2(0.664062, 0.691406)
-texture = ExtResource("1_ruif3")
