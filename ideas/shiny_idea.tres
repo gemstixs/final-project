@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="harvesting" load_steps=4 format=3 uid="uid://c5j0aho8kuwxn"]
+
+[ext_resource type="Resource" uid="uid://cltbu3rxqylp5" path="res://resources/types/harvestable.tres" id="1_3m0gj"]
+[ext_resource type="Script" path="res://ideas/harvesting.gd" id="1_v80pj"]
+[ext_resource type="Texture2D" uid="uid://dtmm7ppvmswi8" path="res://ideas/shiny_idea.png" id="2_dfrom"]
+
+[resource]
+script = ExtResource("1_v80pj")
+effected_types = Array[Resource("res://resources/types/resourcenode_type.gd")]([ExtResource("1_3m0gj")])
+min_damage = 1
+max_damage = 1
+display_name = "Shiny New Idea"
+texture = ExtResource("2_dfrom")

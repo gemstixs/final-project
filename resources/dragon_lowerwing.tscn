@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5fko7ajke220"]
+
+[ext_resource type="Script" path="res://resources/ResourceNode.gd" id="1_7b4d4"]
+[ext_resource type="Texture2D" uid="uid://bhywlsmim6k0r" path="res://art/rocky objects/Objects_separately/Dragon_bones_wing2_ground_shadow.png" id="2_8dai8"]
+[ext_resource type="Resource" uid="uid://cltbu3rxqylp5" path="res://resources/types/harvestable.tres" id="2_hqxb6"]
+[ext_resource type="PackedScene" uid="uid://10jqxvf0yyos" path="res://resources/items/item_bone.tscn" id="3_7lylt"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_7b4d4")
+node_types = Array[Resource("res://resources/types/resourcenode_type.gd")]([ExtResource("2_hqxb6")])
+item_type = ExtResource("3_7lylt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_8dai8")
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="."]
+position = Vector2(-293.699, 254.942)
+scale = Vector2(1.45036, 1.43389)
+polygon = PackedVector2Array(213, -211, 228, -204, 230, -200, 208, -195, 184, -198, 201, -186, 221, -184, 241, -188, 227, -182, 200, -182, 177, -200, 197, -175, 219, -162, 239, -158, 219, -158, 194, -173, 173, -199, 185, -168, 200, -147, 197, -145, 182, -163, 171, -194, 169, -203, 166, -207, 164, -206, 162, -202, 161, -207, 165, -210, 168, -209, 172, -205, 181, -204, 223, -203)

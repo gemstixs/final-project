@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://r5t3qnjw145k"]
+
+[ext_resource type="Script" path="res://resources/ResourceNode.gd" id="1_0sh7q"]
+[ext_resource type="Resource" uid="uid://cltbu3rxqylp5" path="res://resources/types/harvestable.tres" id="2_ergag"]
+[ext_resource type="Texture2D" uid="uid://becy6tvsj64v3" path="res://art/rocky objects/Objects_separately/Dragon_bones_tail_ground_shadow.png" id="2_muy2r"]
+[ext_resource type="PackedScene" uid="uid://10jqxvf0yyos" path="res://resources/items/item_bone.tscn" id="3_88wu4"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+position = Vector2(-1, 0)
+script = ExtResource("1_0sh7q")
+node_types = Array[Resource("res://resources/types/resourcenode_type.gd")]([ExtResource("2_ergag")])
+item_type = ExtResource("3_88wu4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-28, 15)
+texture = ExtResource("2_muy2r")
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="."]
+position = Vector2(-95.3801, 13.7951)
+scale = Vector2(0.994361, 0.974802)
+polygon = PackedVector2Array(33.1294, -17.356, 58.7294, -17.356, 78.3058, -20.2486, 94.8705, -14.4633, 96.3764, -4.33899, 66.2588, 4.33896, 51.2, 14.4633, 43.6705, 31.8192, 60.2352, 21.6949, 91.8588, 14.4633, 105.412, 1.44632, 99.3882, -18.8023, 84.3293, -27.4803, 69.2705, -30.3729, 54.2117, -28.9266)

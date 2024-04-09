@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://10jqxvf0yyos"]
+
+[ext_resource type="Script" path="res://resources/items/item.gd" id="1_mj14f"]
+[ext_resource type="Texture2D" uid="uid://b3qe4ouk885uk" path="res://resources/items/item_bone.png" id="2_fo0rf"]
+[ext_resource type="Resource" uid="uid://lrcxvudwbtli" path="res://resources/items/resource_bone.tres" id="2_rmr0i"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xm8e2"]
+radius = 2.0
+height = 12.0
+
+[node name="item_bone" type="Area2D"]
+script = ExtResource("1_mj14f")
+resource_type = ExtResource("2_rmr0i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.08165e-12, 2.08165e-12)
+scale = Vector2(0.465531, 0.454102)
+texture = ExtResource("2_fo0rf")
+offset = Vector2(2.08165e-12, -4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = -1.57079
+shape = SubResource("CapsuleShape2D_xm8e2")
