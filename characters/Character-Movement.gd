@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+class_name Player #kinda messy to put this in the movement script but this lets me search for the player thru other scripts 
+
 @export var speed = 100
 
 @onready var animation_tree : AnimationTree = $AnimationTree

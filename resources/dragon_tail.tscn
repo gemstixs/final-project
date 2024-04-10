@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://resources/ResourceNode.gd" id="1_0sh7q"]
 [ext_resource type="Resource" uid="uid://cltbu3rxqylp5" path="res://resources/types/harvestable.tres" id="2_ergag"]
-[ext_resource type="Texture2D" uid="uid://becy6tvsj64v3" path="res://art/rocky objects/Objects_separately/Dragon_bones_tail_ground_shadow.png" id="2_muy2r"]
+[ext_resource type="Texture2D" uid="uid://becy6tvsj64v3" path="res://art/Dragon_bones_tail_ground_shadow.png" id="2_muy2r"]
 [ext_resource type="PackedScene" uid="uid://10jqxvf0yyos" path="res://resources/items/item_bone.tscn" id="3_88wu4"]
 
 [node name="StaticBody2D" type="StaticBody2D"]

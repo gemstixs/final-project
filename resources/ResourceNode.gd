@@ -2,7 +2,7 @@ extends StaticBody2D
 class_name ResourceNode
 
 #type of resource (harvestable vs. the portal that tests originality)
-@export var node_types : Array[ResourceNodeType]
+@export var node_types : Array[ResourceNodeTypes]
 
 @export var starting_resources : int = 1
 @export var item_type : PackedScene

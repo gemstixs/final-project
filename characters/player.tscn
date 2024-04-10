@@ -626,7 +626,7 @@ states/Start/position = Vector2(191.5, 100.688)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_vjvpg"), "Idle", "Move", SubResource("AnimationNodeStateMachineTransition_dceax"), "Move", "Idle", SubResource("AnimationNodeStateMachineTransition_v4hyf")]
 graph_offset = Vector2(-64.4996, 16.575)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D" groups=["player"]]
 motion_mode = 1
 script = ExtResource("1_gv331")
 

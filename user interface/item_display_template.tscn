@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ef36bcb1xg33"]
+
+[ext_resource type="Script" path="res://user interface/Item_Display.gd" id="1_rcd5v"]
+[ext_resource type="Texture2D" uid="uid://bl4p5l4plrwkp" path="res://resources/items/item_sprite.png" id="2_ndlor"]
+
+[node name="Sprite Display" type="HBoxContainer"]
+script = ExtResource("1_rcd5v")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("2_ndlor")
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+text = "0"

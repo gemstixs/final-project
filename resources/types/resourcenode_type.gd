@@ -1,3 +1,3 @@
 extends Resource
 
-class_name ResourceNodeType
+class_name ResourceNodeTypes

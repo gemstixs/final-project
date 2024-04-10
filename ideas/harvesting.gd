@@ -3,7 +3,7 @@ extends EquipabbleIdea
 class_name harvesting
 
 #what types of resourcenodes are effected; edit in Equip sprite under equipped idea
-@export var effected_types : Array[ResourceNodeType] 
+@export var effected_types : Array[ResourceNodeTypes] 
 
 #damage amts possible for each idea
 @export var min_amount : int = 1

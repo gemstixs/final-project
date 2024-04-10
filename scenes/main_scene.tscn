@@ -740,6 +740,8 @@ position = Vector2(-169, 16)
 [node name="portal" parent="." instance=ExtResource("3_lliyo")]
 y_sort_enabled = true
 position = Vector2(19, -226)
+node_types = null
+starting_resources = null
 
 [node name="pearl" parent="." instance=ExtResource("8_owglq")]
 y_sort_enabled = true
@@ -748,22 +750,27 @@ position = Vector2(-185, -296)
 [node name="dragon body" parent="." instance=ExtResource("9_tvccl")]
 y_sort_enabled = true
 position = Vector2(137, 62)
+starting_resources = null
 
 [node name="dragon upper wing" parent="." instance=ExtResource("6_5ec6w")]
 position = Vector2(181, 32)
 scale = Vector2(0.75, 0.75)
+starting_resources = null
 
 [node name="dragon lower wing" parent="." instance=ExtResource("7_a7bj6")]
 position = Vector2(162, 115)
 scale = Vector2(0.75, 0.75)
+starting_resources = null
 
 [node name="dragon tail" parent="." instance=ExtResource("8_ub6jj")]
 position = Vector2(236, 66)
 scale = Vector2(0.6, 0.6)
+starting_resources = null
 
 [node name="demonic_shrine" parent="." instance=ExtResource("9_1nu3m")]
 position = Vector2(232, -297)
 scale = Vector2(0.5, 0.5)
+starting_resources = null
 
 [node name="map" type="TileMap" parent="."]
 z_index = -5
