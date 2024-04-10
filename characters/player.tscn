@@ -1,13 +1,12 @@
-[gd_scene load_steps=41 format=3 uid="uid://bjtumlvsuxhm5"]
+[gd_scene load_steps=40 format=3 uid="uid://bjtumlvsuxhm5"]
 
 [ext_resource type="Script" path="res://characters/Character-Movement.gd" id="1_gv331"]
-[ext_resource type="Texture2D" uid="uid://doedgcji6l8i5" path="res://art/Free Version Red Sprite/Front Movement.png" id="2_tf22t"]
-[ext_resource type="Texture2D" uid="uid://cggjk7yjqi8ts" path="res://art/Free Version Red Sprite/Back Movement.png" id="3_3wa5e"]
-[ext_resource type="Texture2D" uid="uid://db6cb5orrb8kx" path="res://art/Free Version Red Sprite/Side Movement.png" id="4_0ely2"]
-[ext_resource type="Texture2D" uid="uid://b1i1vvjwb4r6c" path="res://art/Free Version Red Sprite/right Movement.png" id="4_6e00u"]
-[ext_resource type="Texture2D" uid="uid://bdskdoqjmirw" path="res://art/Free Version Red Sprite/left movement.png" id="6_7ysea"]
+[ext_resource type="Texture2D" uid="uid://doedgcji6l8i5" path="res://art/player sprite/Front Movement.png" id="2_tf22t"]
+[ext_resource type="Texture2D" uid="uid://cggjk7yjqi8ts" path="res://art/player sprite/Back Movement.png" id="3_3wa5e"]
+[ext_resource type="Texture2D" uid="uid://b1i1vvjwb4r6c" path="res://art/player sprite/right Movement.png" id="4_6e00u"]
+[ext_resource type="Texture2D" uid="uid://bdskdoqjmirw" path="res://art/player sprite/left movement.png" id="6_7ysea"]
+[ext_resource type="Texture2D" uid="uid://dtmm7ppvmswi8" path="res://ideas/shiny_idea.png" id="6_d4pem"]
 [ext_resource type="Script" path="res://characters/Equip.gd" id="7_bfqpw"]
-[ext_resource type="Texture2D" uid="uid://cn8f57xk4ruwh" path="res://ideas/your_idea.png" id="7_cc7pq"]
 [ext_resource type="Resource" uid="uid://c5j0aho8kuwxn" path="res://ideas/shiny_idea.tres" id="9_unv7l"]
 [ext_resource type="Script" path="res://characters/Inventory.gd" id="10_gf5yx"]
 
@@ -480,7 +479,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("4_0ely2")]
+"values": [ExtResource("4_6e00u")]
 }
 
 [sub_resource type="Animation" id="Animation_twdca"]
@@ -650,7 +649,7 @@ libraries = {
 position = Vector2(1, 1)
 rotation = 1.57079
 scale = Vector2(0.15625, 0.15625)
-texture = ExtResource("7_cc7pq")
+texture = ExtResource("6_d4pem")
 offset = Vector2(0.5, 0.5)
 script = ExtResource("7_bfqpw")
 equipped_idea = ExtResource("9_unv7l")

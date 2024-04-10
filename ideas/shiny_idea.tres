@@ -7,7 +7,7 @@
 [resource]
 script = ExtResource("1_v80pj")
 effected_types = Array[Resource("res://resources/types/resourcenode_type.gd")]([ExtResource("1_3m0gj")])
-min_damage = 1
-max_damage = 1
+min_amount = 1
+max_amount = 1
 display_name = "Shiny New Idea"
 texture = ExtResource("2_dfrom")

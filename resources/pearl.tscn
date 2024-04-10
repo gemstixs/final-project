@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dgeqsgaaylfuv"]
 
-[ext_resource type="Texture2D" uid="uid://dhxbnux7rxt28" path="res://art/rocky objects/Objects_separately/Caury_pearl2_ground_shadow.png" id="1_hlq0s"]
+[ext_resource type="Texture2D" uid="uid://dhxbnux7rxt28" path="res://art/Caury_pearl2_ground_shadow.png" id="1_hlq0s"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nfa3d"]
 radius = 13.3333

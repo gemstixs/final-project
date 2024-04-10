@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://bm3vnum13y2w8"]
+
+[ext_resource type="Script" path="res://resources/ResourceNode.gd" id="1_648ru"]
+[ext_resource type="Texture2D" uid="uid://do50gcnkdp618" path="res://art/demonic_shrine.png" id="1_ml6a1"]
+[ext_resource type="Resource" uid="uid://cltbu3rxqylp5" path="res://resources/types/harvestable.tres" id="2_xev2c"]
+[ext_resource type="PackedScene" uid="uid://c6ooks7r275sw" path="res://resources/items/item_engine.tscn" id="3_qir7v"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8ff4p"]
+radius = 8.0
+height = 38.0
+
+[node name="demonic_shrine" type="StaticBody2D"]
+script = ExtResource("1_648ru")
+node_types = Array[Resource("res://resources/types/resourcenode_type.gd")]([ExtResource("2_xev2c")])
+item_type = ExtResource("3_qir7v")
+
+[node name="DemonicShrine" type="Sprite2D" parent="."]
+position = Vector2(0, 25)
+texture = ExtResource("1_ml6a1")
+offset = Vector2(3.5, 2.08165e-12)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 42)
+shape = SubResource("CapsuleShape2D_8ff4p")

@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://resources/ResourceNode.gd" id="1_0q0nn"]
 [ext_resource type="Resource" uid="uid://cltbu3rxqylp5" path="res://resources/types/harvestable.tres" id="2_8rl0b"]
 [ext_resource type="PackedScene" uid="uid://10jqxvf0yyos" path="res://resources/items/item_bone.tscn" id="3_aem2y"]
-[ext_resource type="Texture2D" uid="uid://byr7l7yorkapl" path="res://art/rocky objects/Objects_separately/Dragon_bones_body_ground_shadow.png" id="4_tm3lu"]
+[ext_resource type="Texture2D" uid="uid://byr7l7yorkapl" path="res://art/Dragon_bones_body_ground_shadow.png" id="4_tm3lu"]
 
 [node name="dragon_body" type="StaticBody2D"]
 position = Vector2(213.937, -203.981)
