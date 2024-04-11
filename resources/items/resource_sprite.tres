@@ -1,7 +1,9 @@
-[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3 uid="uid://dp5xiujgw5bkc"]
+[gd_resource type="Resource" script_class="ItemResource" load_steps=3 format=3 uid="uid://dp5xiujgw5bkc"]
 
 [ext_resource type="Script" path="res://resources/items/item_resource.gd" id="1_cqvce"]
+[ext_resource type="Texture2D" uid="uid://bl4p5l4plrwkp" path="res://resources/items/item_sprite.png" id="2_08rgb"]
 
 [resource]
 script = ExtResource("1_cqvce")
-display_name = ""
+display_name = "Sprite"
+texture = ExtResource("2_08rgb")

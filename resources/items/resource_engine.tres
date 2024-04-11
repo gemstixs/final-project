@@ -1,7 +1,9 @@
-[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3 uid="uid://t52ff2jf1mlg"]
+[gd_resource type="Resource" script_class="ItemResource" load_steps=3 format=3 uid="uid://t52ff2jf1mlg"]
 
 [ext_resource type="Script" path="res://resources/items/item_resource.gd" id="1_3ioea"]
+[ext_resource type="Texture2D" uid="uid://dufl487cjfb2w" path="res://resources/items/item_engine.png" id="2_j1272"]
 
 [resource]
 script = ExtResource("1_3ioea")
-display_name = ""
+display_name = "Game Engine Crystal"
+texture = ExtResource("2_j1272")

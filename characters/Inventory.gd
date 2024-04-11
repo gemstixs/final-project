@@ -2,7 +2,7 @@ extends Node
 
 class_name Inventory
 
-@export var resources: Dictionary = {}
+@export var resources: Dictionary = { }
 
 #sets up signal to inventory display
 signal resource_count_changed(type : ItemResource, new_count : int) 

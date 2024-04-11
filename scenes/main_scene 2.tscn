@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://dyya1ih2acs48"]
+[gd_scene load_steps=23 format=3 uid="uid://dyya1ih2acs48"]
 
 [ext_resource type="Texture2D" uid="uid://cf6u1iq1x24sx" path="res://art/PixelWoods/Terrain(main)/terrain tiles.png" id="1_rhg35"]
 [ext_resource type="Texture2D" uid="uid://bxf6f5yeynjb2" path="res://art/PixelWoods/Waterfall/waterfalls.png" id="2_3nkj4"]
@@ -13,7 +13,6 @@
 [ext_resource type="PackedScene" uid="uid://r5t3qnjw145k" path="res://resources/dragon_tail.tscn" id="8_ub6jj"]
 [ext_resource type="PackedScene" uid="uid://bm3vnum13y2w8" path="res://resources/demonic_shrine.tscn" id="9_1nu3m"]
 [ext_resource type="PackedScene" uid="uid://blkik506qixfj" path="res://resources/dragon_body.tscn" id="9_tvccl"]
-[ext_resource type="PackedScene" uid="uid://bkyjky2p2agt2" path="res://user interface/inventory_display.tscn" id="10_rs0ue"]
 [ext_resource type="Texture2D" uid="uid://0f4iyiod2xtk" path="res://art/PixelWoods/Seasons/winter/terrain.png" id="13_b3lyn"]
 [ext_resource type="Texture2D" uid="uid://idi5o3wjffhb" path="res://art/PixelWoods/Seasons/winter/decorations.png" id="14_u0qtb"]
 
@@ -741,8 +740,6 @@ position = Vector2(-169, 16)
 [node name="portal" parent="." instance=ExtResource("3_lliyo")]
 y_sort_enabled = true
 position = Vector2(19, -226)
-node_types = null
-starting_resources = null
 
 [node name="pearl" parent="." instance=ExtResource("8_owglq")]
 y_sort_enabled = true
@@ -751,31 +748,22 @@ position = Vector2(-185, -296)
 [node name="dragon body" parent="." instance=ExtResource("9_tvccl")]
 y_sort_enabled = true
 position = Vector2(137, 62)
-starting_resources = null
 
 [node name="dragon upper wing" parent="." instance=ExtResource("6_5ec6w")]
 position = Vector2(181, 32)
 scale = Vector2(0.75, 0.75)
-starting_resources = null
 
 [node name="dragon lower wing" parent="." instance=ExtResource("7_a7bj6")]
 position = Vector2(162, 115)
 scale = Vector2(0.75, 0.75)
-starting_resources = null
 
 [node name="dragon tail" parent="." instance=ExtResource("8_ub6jj")]
 position = Vector2(236, 66)
 scale = Vector2(0.6, 0.6)
-starting_resources = null
 
 [node name="demonic_shrine" parent="." instance=ExtResource("9_1nu3m")]
 position = Vector2(232, -297)
 scale = Vector2(0.5, 0.5)
-starting_resources = null
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="InventoryDisplay" parent="CanvasLayer" instance=ExtResource("10_rs0ue")]
 
 [node name="map" type="TileMap" parent="."]
 z_index = -5
