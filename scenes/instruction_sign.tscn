@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://sdde5rejmmbc"]
+
+[ext_resource type="Script" path="res://scenes/PopupPanel.gd" id="1_ehijy"]
+[ext_resource type="Texture2D" uid="uid://ltdjvd04sugb" path="res://art/sign.png" id="1_xehai"]
+
+[node name="InstructionSign" type="Control"]
+layout_mode = 3
+anchor_left = -0.169
+anchor_top = -0.243
+anchor_right = -0.157
+anchor_bottom = -0.227
+offset_left = -5.31198
+offset_top = -8.53601
+offset_right = 12.864
+offset_bottom = 13.096
+scale = Vector2(0.875, 0.875)
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+offset_left = -85.0
+offset_top = -54.0
+offset_right = 126.0
+offset_bottom = 58.0
+script = ExtResource("1_ehijy")
+
+[node name="Text" type="RichTextLabel" parent="Panel"]
+offset_left = 6.0
+offset_top = 1.0
+offset_right = 206.0
+offset_bottom = 104.0
+text = "welcome to game maker island!
+you are here because you have an Idea for a game. on this island, you can collect things to make your game. collect the sprites from the forest grown by generous artists, and the code bones from the skeleton of projects past! you’ll also need a good game engine, which is difficult to come by! you’ll need one that’s easy to use, but also one not involved in the military industrial complex… the only way to find such a rare gem may be to visit the demonic shrine in the tundra of the northeast…
+once you’ve collected everything for your game, visit the portal to a player on the center island! present the portal with your amazing, all original game, and a player will be able to tell you what they think!
+good luck!"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.201
+anchor_top = 0.302
+anchor_right = 0.649
+anchor_bottom = 0.661
+offset_left = -6.432
+offset_top = -9.664
+offset_right = 19.232
+offset_bottom = 18.848
+texture_normal = ExtResource("1_xehai")
+texture_pressed = ExtResource("1_xehai")
+texture_hover = ExtResource("1_xehai")
+texture_disabled = ExtResource("1_xehai")
+texture_focused = ExtResource("1_xehai")
+
+[connection signal="pressed" from="TextureButton" to="Panel" method="_on_texture_button_pressed"]
