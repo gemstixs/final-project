@@ -1,13 +1,13 @@
-[gd_scene load_steps=40 format=3 uid="uid://bjtumlvsuxhm5"]
+[gd_scene load_steps=37 format=3 uid="uid://bjtumlvsuxhm5"]
 
 [ext_resource type="Script" path="res://characters/Character-Movement.gd" id="1_gv331"]
 [ext_resource type="Texture2D" uid="uid://doedgcji6l8i5" path="res://art/player sprite/Front Movement.png" id="2_tf22t"]
 [ext_resource type="Texture2D" uid="uid://cggjk7yjqi8ts" path="res://art/player sprite/Back Movement.png" id="3_3wa5e"]
 [ext_resource type="Texture2D" uid="uid://b1i1vvjwb4r6c" path="res://art/player sprite/right Movement.png" id="4_6e00u"]
+[ext_resource type="Texture2D" uid="uid://cn8f57xk4ruwh" path="res://ideas/your_idea.png" id="6_6see2"]
 [ext_resource type="Texture2D" uid="uid://bdskdoqjmirw" path="res://art/player sprite/left movement.png" id="6_7ysea"]
-[ext_resource type="Texture2D" uid="uid://dtmm7ppvmswi8" path="res://ideas/shiny_idea.png" id="6_d4pem"]
 [ext_resource type="Script" path="res://characters/Equip.gd" id="7_bfqpw"]
-[ext_resource type="Resource" uid="uid://c5j0aho8kuwxn" path="res://ideas/shiny_idea.tres" id="9_unv7l"]
+[ext_resource type="Resource" uid="uid://dvihiuq1pwweo" path="res://ideas/your_idea.tres" id="8_cwauy"]
 [ext_resource type="Script" path="res://characters/Inventory.gd" id="10_gf5yx"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i4f63"]
@@ -75,6 +75,18 @@ tracks/4/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Equip:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.57079]
 }
 
 [sub_resource type="Animation" id="Animation_hyv25"]
@@ -289,9 +301,9 @@ tracks/3/keys = {
 "values": [ExtResource("3_3wa5e")]
 }
 
-[sub_resource type="Animation" id="Animation_07odp"]
-resource_name = "swing_front"
-length = 0.6
+[sub_resource type="Animation" id="Animation_p5ab4"]
+resource_name = "swing_left"
+length = 1.4
 step = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -305,21 +317,18 @@ tracks/0/keys = {
 "update": 0,
 "values": [Vector2(1, 1)]
 }
-
-[sub_resource type="Animation" id="Animation_p5ab4"]
-resource_name = "swing_left"
-length = 0.6
-step = 0.2
-
-[sub_resource type="Animation" id="Animation_g8gve"]
-resource_name = "swing_right"
-length = 0.6
-step = 0.2
-
-[sub_resource type="Animation" id="Animation_020uq"]
-resource_name = "swing_up"
-length = 0.6
-step = 0.2
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Equip:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.57079]
+}
 
 [sub_resource type="Animation" id="Animation_x6cyr"]
 resource_name = "walk_forward"
@@ -543,10 +552,7 @@ _data = {
 "idle_left": SubResource("Animation_5fg4y"),
 "idle_right": SubResource("Animation_usg6e"),
 "idle_up": SubResource("Animation_dykgh"),
-"swing_down": SubResource("Animation_07odp"),
-"swing_left": SubResource("Animation_p5ab4"),
-"swing_right": SubResource("Animation_g8gve"),
-"swing_up": SubResource("Animation_020uq"),
+"swing": SubResource("Animation_p5ab4"),
 "walk_down": SubResource("Animation_x6cyr"),
 "walk_left": SubResource("Animation_dm8sx"),
 "walk_right": SubResource("Animation_mmfy3"),
@@ -649,17 +655,17 @@ libraries = {
 position = Vector2(1, 1)
 rotation = 1.57079
 scale = Vector2(0.15625, 0.15625)
-texture = ExtResource("6_d4pem")
+texture = ExtResource("6_6see2")
 offset = Vector2(0.5, 0.5)
 script = ExtResource("7_bfqpw")
-equipped_idea = ExtResource("9_unv7l")
+equipped_idea = ExtResource("8_cwauy")
 
 [node name="Area2D" type="Area2D" parent="Equip"]
-position = Vector2(0, -1.90735e-06)
+position = Vector2(-1.43609e-11, 3.81468e-07)
 scale = Vector2(6.4, 6.4)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Equip/Area2D"]
-position = Vector2(7.10543e-15, 2.38418e-07)
+position = Vector2(2.38419e-07, 2.3842e-07)
 scale = Vector2(0.8, 0.8)
 shape = SubResource("CircleShape2D_dt4o2")
 

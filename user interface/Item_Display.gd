@@ -13,8 +13,9 @@ func _ready():
 	player_inventory = player.find_child("Inventory") as Inventory
 	player_inventory.connect("resource_count_changed", _on_player_inventory_resource_count_changed)
 
-func _on_player_inventory_resource_count_changed(type : ItemResource, new_count : int) -> void:
-	print("new count for" + type.display_name + "is" + str(new_count))
-
-# func update_count(count : int):
-	# label.text = str(count)
+func _on_player_inventory_resource_count_changed(_type : ItemResource, _new_count : int) -> void:
+	pass
+	
+func update_count(count : int):
+	label.text = str(count)
+	

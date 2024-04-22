@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://diuovwxi3rsja"]
+
+[ext_resource type="Texture2D" uid="uid://dtmm7ppvmswi8" path="res://ideas/shiny_idea.png" id="1_5s22d"]
+[ext_resource type="Script" path="res://user interface/IdeaButton.gd" id="2_53t5o"]
+
+[node name="ShinyNewIdeaButton" type="Button"]
+text = "Shiny New Idea"
+icon = ExtResource("1_5s22d")
+script = ExtResource("2_53t5o")

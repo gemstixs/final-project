@@ -1,4 +1,4 @@
-extends EquipabbleIdea
+extends Idea
 
 class_name harvesting
 

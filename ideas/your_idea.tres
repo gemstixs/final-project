@@ -2,13 +2,13 @@
 
 [ext_resource type="Resource" uid="uid://cltbu3rxqylp5" path="res://resources/types/harvestable.tres" id="1_vctkr"]
 [ext_resource type="Resource" uid="uid://bco232e74qmhg" path="res://resources/types/originality.tres" id="2_l0vgv"]
-[ext_resource type="Texture2D" uid="uid://cn8f57xk4ruwh" path="res://ideas/your_idea.png" id="2_okxgb"]
 [ext_resource type="Script" path="res://ideas/harvesting.gd" id="3_unhko"]
+[ext_resource type="Texture2D" uid="uid://cn8f57xk4ruwh" path="res://ideas/your_idea.png" id="4_7ahgl"]
 
 [resource]
 script = ExtResource("3_unhko")
 effected_types = Array[Resource("res://resources/types/resourcenode_type.gd")]([ExtResource("1_vctkr"), ExtResource("2_l0vgv")])
-min_damage = 1
-max_damage = 1
+min_amount = 1
+max_amount = 1
 display_name = "Your Idea"
-texture = ExtResource("2_okxgb")
+texture = ExtResource("4_7ahgl")

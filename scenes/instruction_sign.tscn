@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://sdde5rejmmbc"]
 
-[ext_resource type="Script" path="res://scenes/PopupPanel.gd" id="1_ehijy"]
+[ext_resource type="Script" path="res://scenes/InstructionsPanel.gd" id="1_ehijy"]
 [ext_resource type="Texture2D" uid="uid://ltdjvd04sugb" path="res://art/sign.png" id="1_xehai"]
 
 [node name="InstructionSign" type="Control"]
