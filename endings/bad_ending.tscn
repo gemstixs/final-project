@@ -2421,11 +2421,13 @@ sources/5 = SubResource("TileSetAtlasSource_23xiu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 y_sort_enabled = true
+position = Vector2(-95, -72)
 texture = ExtResource("1_27khl")
 
 [node name="player" parent="." instance=ExtResource("2_j1k1w")]
 y_sort_enabled = true
-position = Vector2(59, 27)
+position = Vector2(-11, -102)
+scale = Vector2(5, 5)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 y_sort_enabled = true
