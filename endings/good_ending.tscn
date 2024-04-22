@@ -1,27 +1,15 @@
-[gd_scene load_steps=27 format=3 uid="uid://dyya1ih2acs48"]
+[gd_scene load_steps=15 format=3 uid="uid://4c0itxy3311l"]
 
-[ext_resource type="Texture2D" uid="uid://cf6u1iq1x24sx" path="res://art/PixelWoods/Terrain(main)/terrain tiles.png" id="1_rhg35"]
-[ext_resource type="Texture2D" uid="uid://bxf6f5yeynjb2" path="res://art/PixelWoods/Waterfall/waterfalls.png" id="2_3nkj4"]
-[ext_resource type="PackedScene" uid="uid://bjtumlvsuxhm5" path="res://characters/player.tscn" id="3_hxb3u"]
-[ext_resource type="PackedScene" uid="uid://bxbvqlv4jxpd8" path="res://scenes/portal.tscn" id="3_lliyo"]
-[ext_resource type="Texture2D" uid="uid://kwp4sm6q4skv" path="res://art/PixelWoods/Bridge/Bridge.png" id="3_qu7ef"]
-[ext_resource type="Texture2D" uid="uid://l3q3iqdntdcf" path="res://art/PixelWoods/Decorations(main)/Decorations.png" id="4_0knx6"]
-[ext_resource type="PackedScene" uid="uid://di2488yjvnawt" path="res://resources/dragon_upperwing.tscn" id="6_5ec6w"]
-[ext_resource type="PackedScene" uid="uid://d3l3ts1cv3l8c" path="res://resources/sprite_tree.tscn" id="6_55g2w"]
-[ext_resource type="PackedScene" uid="uid://c5fko7ajke220" path="res://resources/dragon_lowerwing.tscn" id="7_a7bj6"]
-[ext_resource type="PackedScene" uid="uid://dgeqsgaaylfuv" path="res://resources/pearl.tscn" id="8_owglq"]
-[ext_resource type="PackedScene" uid="uid://r5t3qnjw145k" path="res://resources/dragon_tail.tscn" id="8_ub6jj"]
-[ext_resource type="PackedScene" uid="uid://bm3vnum13y2w8" path="res://resources/demonic_shrine.tscn" id="9_1nu3m"]
-[ext_resource type="PackedScene" uid="uid://blkik506qixfj" path="res://resources/dragon_body.tscn" id="9_tvccl"]
-[ext_resource type="PackedScene" uid="uid://bwgn0u68s7dtl" path="res://user interface/hotbar.tscn" id="10_bf3ss"]
-[ext_resource type="PackedScene" uid="uid://bkyjky2p2agt2" path="res://user interface/inventory_display.tscn" id="10_rs0ue"]
-[ext_resource type="Script" path="res://scenes/InstructionsPanel.gd" id="11_ec3xl"]
-[ext_resource type="Texture2D" uid="uid://ltdjvd04sugb" path="res://art/sign.png" id="12_07tly"]
-[ext_resource type="Texture2D" uid="uid://0f4iyiod2xtk" path="res://art/PixelWoods/Seasons/winter/terrain.png" id="13_b3lyn"]
-[ext_resource type="Texture2D" uid="uid://idi5o3wjffhb" path="res://art/PixelWoods/Seasons/winter/decorations.png" id="14_u0qtb"]
+[ext_resource type="Texture2D" uid="uid://b30sg0md2656h" path="res://art/Luminous_tree2.png" id="1_uc81r"]
+[ext_resource type="Texture2D" uid="uid://cf6u1iq1x24sx" path="res://art/PixelWoods/Terrain(main)/terrain tiles.png" id="2_10jdb"]
+[ext_resource type="Texture2D" uid="uid://bxf6f5yeynjb2" path="res://art/PixelWoods/Waterfall/waterfalls.png" id="3_0fpop"]
+[ext_resource type="Texture2D" uid="uid://kwp4sm6q4skv" path="res://art/PixelWoods/Bridge/Bridge.png" id="4_30iwb"]
+[ext_resource type="Texture2D" uid="uid://l3q3iqdntdcf" path="res://art/PixelWoods/Decorations(main)/Decorations.png" id="5_sqpdj"]
+[ext_resource type="Texture2D" uid="uid://0f4iyiod2xtk" path="res://art/PixelWoods/Seasons/winter/terrain.png" id="6_fekqx"]
+[ext_resource type="Texture2D" uid="uid://idi5o3wjffhb" path="res://art/PixelWoods/Seasons/winter/decorations.png" id="7_o8pdr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wgdn5"]
-texture = ExtResource("1_rhg35")
+texture = ExtResource("2_10jdb")
 1:0/0 = 0
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:0/0/physics_layer_0/angular_velocity = 0.0
@@ -543,7 +531,7 @@ texture = ExtResource("1_rhg35")
 4:14/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dr2dh"]
-texture = ExtResource("2_3nkj4")
+texture = ExtResource("3_0fpop")
 2:2/0 = 0
 2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:2/0/physics_layer_0/angular_velocity = 0.0
@@ -912,7 +900,7 @@ texture = ExtResource("2_3nkj4")
 21:10/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u2prx"]
-texture = ExtResource("3_qu7ef")
+texture = ExtResource("4_30iwb")
 1:2/0 = 0
 1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:2/0/physics_layer_0/angular_velocity = 0.0
@@ -981,7 +969,7 @@ texture = ExtResource("3_qu7ef")
 6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.46875, -1.6875, -6.96875, -2.375, -4.59375, -8, -0.53125, -8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jlet1"]
-texture = ExtResource("4_0knx6")
+texture = ExtResource("5_sqpdj")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -1387,7 +1375,7 @@ texture = ExtResource("4_0knx6")
 4:12/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pubei"]
-texture = ExtResource("13_b3lyn")
+texture = ExtResource("6_fekqx")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -1873,7 +1861,7 @@ texture = ExtResource("13_b3lyn")
 3:14/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cakhx"]
-texture = ExtResource("14_u0qtb")
+texture = ExtResource("7_o8pdr")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -2193,7 +2181,7 @@ texture = ExtResource("14_u0qtb")
 4:12/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 4:12/0/physics_layer_0/angular_velocity = 0.0
 
-[sub_resource type="TileSet" id="TileSet_j1efo"]
+[sub_resource type="TileSet" id="TileSet_fd7kn"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_wgdn5")
 sources/1 = SubResource("TileSetAtlasSource_dr2dh")
@@ -2202,98 +2190,17 @@ sources/3 = SubResource("TileSetAtlasSource_jlet1")
 sources/5 = SubResource("TileSetAtlasSource_pubei")
 sources/6 = SubResource("TileSetAtlasSource_cakhx")
 
-[node name="main scene" type="Node2D"]
-y_sort_enabled = true
+[node name="GoodEnding" type="Node2D"]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_hxb3u")]
-y_sort_enabled = true
-position = Vector2(-187, -143)
-scale = Vector2(3, 3)
-
-[node name="sprite tree" parent="." instance=ExtResource("6_55g2w")]
-y_sort_enabled = true
-position = Vector2(-169, 16)
-
-[node name="portal" parent="." instance=ExtResource("3_lliyo")]
-y_sort_enabled = true
-position = Vector2(19, -226)
-
-[node name="pearl" parent="." instance=ExtResource("8_owglq")]
-y_sort_enabled = true
-position = Vector2(-185, -296)
-
-[node name="dragon body" parent="." instance=ExtResource("9_tvccl")]
-y_sort_enabled = true
-position = Vector2(137, 62)
-starting_resources = null
-
-[node name="dragon upper wing" parent="." instance=ExtResource("6_5ec6w")]
-position = Vector2(181, 32)
-scale = Vector2(0.75, 0.75)
-starting_resources = null
-
-[node name="dragon lower wing" parent="." instance=ExtResource("7_a7bj6")]
-position = Vector2(162, 115)
-scale = Vector2(0.75, 0.75)
-starting_resources = null
-
-[node name="dragon tail" parent="." instance=ExtResource("8_ub6jj")]
-position = Vector2(236, 66)
-scale = Vector2(0.6, 0.6)
-starting_resources = null
-
-[node name="demonic_shrine" parent="." instance=ExtResource("9_1nu3m")]
-position = Vector2(232, -297)
-scale = Vector2(0.5, 0.5)
-starting_resources = null
-
-[node name="UI" type="CanvasLayer" parent="."]
-
-[node name="Hotbar" parent="UI" instance=ExtResource("10_bf3ss")]
-anchors_preset = -1
-anchor_right = 1.004
-anchor_bottom = 1.006
-offset_right = 0.391922
-offset_bottom = 0.111973
-
-[node name="InventoryDisplay" parent="UI" instance=ExtResource("10_rs0ue")]
-offset_right = 5.0
-offset_bottom = 5.0
-
-[node name="Sign" type="Button" parent="."]
-offset_left = -202.0
-offset_top = -187.0
-offset_right = -162.0
-offset_bottom = -147.0
-toggle_mode = true
-action_mode = 0
-icon = ExtResource("12_07tly")
-flat = true
-
-[node name="Instructions" type="Window" parent="."]
-title = "Instructions"
-position = Vector2i(-260, -200)
-size = Vector2i(150, 50)
-visible = false
-always_on_top = true
-script = ExtResource("11_ec3xl")
-
-[node name="Text" type="RichTextLabel" parent="Instructions"]
-offset_left = 4.0
-offset_top = 4.0
-offset_right = 146.0
-offset_bottom = 46.0
-text = "welcome to game maker island!
-you are here because you have an Idea for a game. on this island, you can collect things to make your game. collect the sprites from the forest grown by generous artists, and the code bones from the skeleton of projects past! you’ll also need a good game engine, which is difficult to come by! you’ll need one that’s easy to use, but also one not involved in the military industrial complex… the only way to find such a rare gem may be to visit the demonic shrine in the tundra of the northeast…
-once you’ve collected everything for your game, visit the portal to a player on the center island! present the portal with your amazing, all original game, and a player will be able to tell you what they think!
-good luck!"
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_uc81r")
 
 [node name="map" type="TileMap" parent="."]
 z_index = -5
 z_as_relative = false
 y_sort_enabled = true
 position = Vector2(0, -3)
-tile_set = SubResource("TileSet_j1efo")
+tile_set = SubResource("TileSet_fd7kn")
 format = 2
 layer_0/name = "lvl1"
 layer_0/y_sort_enabled = true
@@ -2306,5 +2213,3 @@ layer_1/tile_data = PackedInt32Array(-851981, 131073, 7, -851980, 196609, 7, -85
 layer_2/name = "lvl3"
 layer_2/y_sort_enabled = true
 layer_2/tile_data = PackedInt32Array(-1048590, 3, 1, -1048589, 65539, 1, -1245171, 5, 0, -1245170, 65541, 0, -1245169, 131077, 0, -1179635, 131077, 4, -1179633, 65541, 4, -1179636, 5, 0, -1179632, 131077, 0, -1114100, 5, 1, -1114096, 131077, 1, -1048563, 196613, 1, -1048562, 262149, 1, -1048561, 327685, 1, -1048564, 5, 2, -1048560, 131077, 2, -1179634, 393221, 3, -1114098, 393221, 3, -1114099, 393221, 3, -1114097, 393221, 3, -851949, 393222, 10, -786413, 393222, 11, -851948, 458758, 10, -786412, 458758, 11, -1048565, 327686, 10, -983029, 327686, 11, -1179630, 327686, 10, -1114094, 327686, 11, -1179638, 196614, 11, -917483, 196614, 11, -851955, 131078, 11, -917487, 65542, 11, -1114102, 65542, 11, -983020, 65542, 11, -786414, 65542, 11)
-
-[connection signal="pressed" from="Sign" to="Instructions" method="_on_sign_pressed"]
