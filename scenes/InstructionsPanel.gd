@@ -1,7 +1,9 @@
 extends Window
 
-func _ready():
-	self.visible = false
+@onready var popup = $Instructions
 
 func _on_sign_pressed():
-	self.visible = true
+	popup.show()
+
+func _on_window_close_requested():
+	popup.hide()

@@ -16,6 +16,7 @@ config/features=PackedStringArray("4.2", "Forward Plus")
 
 [display]
 
+window/subwindows/embed_subwindows=false
 window/stretch/scale=7.0
 
 [input]
