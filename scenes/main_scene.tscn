@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dyya1ih2acs48"]
+[gd_scene load_steps=18 format=3 uid="uid://dyya1ih2acs48"]
 
 [ext_resource type="Script" path="res://scenes/scene_change.gd" id="1_0fgea"]
 [ext_resource type="PackedScene" uid="uid://bjtumlvsuxhm5" path="res://characters/player.tscn" id="3_hxb3u"]
@@ -15,31 +15,12 @@
 [ext_resource type="PackedScene" uid="uid://blkik506qixfj" path="res://resources/dragon_body.tscn" id="9_tvccl"]
 [ext_resource type="PackedScene" uid="uid://bn4hryf1r4jon" path="res://user interface/hotbar.tscn" id="10_bf3ss"]
 [ext_resource type="PackedScene" uid="uid://bkyjky2p2agt2" path="res://user interface/inventory_display.tscn" id="10_rs0ue"]
-[ext_resource type="Script" path="res://scenes/InstructionsPanel.gd" id="11_ec3xl"]
 [ext_resource type="Texture2D" uid="uid://ltdjvd04sugb" path="res://art/sign.png" id="12_07tly"]
 [ext_resource type="TileSet" uid="uid://d1dmpnivir66h" path="res://basic_tile_set.tres" id="14_grtkq"]
 
 [node name="main scene" type="Node2D"]
 y_sort_enabled = true
 script = ExtResource("1_0fgea")
-
-[node name="UI" type="CanvasLayer" parent="."]
-
-[node name="InventoryDisplay" parent="UI" instance=ExtResource("10_rs0ue")]
-anchors_preset = -1
-anchor_left = 0.007
-anchor_right = 0.268
-anchor_bottom = 0.384
-offset_left = -0.0640002
-offset_top = 1.0
-offset_right = -122.736
-offset_bottom = -214.832
-
-[node name="Hotbar" parent="UI" instance=ExtResource("10_bf3ss")]
-offset_left = 2.0
-offset_top = 207.0
-offset_right = 389.0
-offset_bottom = 216.0
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_hxb3u")]
 y_sort_enabled = true
@@ -51,8 +32,15 @@ y_sort_enabled = true
 position = Vector2(-169, 16)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(30, -327)
+position = Vector2(26, -283)
 texture = ExtResource("3_p0xef")
+
+[node name="portal" type="Button" parent="."]
+offset_left = 27.0
+offset_top = -231.0
+offset_right = 50.0
+offset_bottom = -199.0
+keep_pressed_outside = true
 
 [node name="PortalWindow" type="Window" parent="."]
 title = "player portal"
@@ -78,13 +66,6 @@ icon = ExtResource("5_fv5i8")
 layout_mode = 2
 text = "Your Idea"
 icon = ExtResource("4_8rnoo")
-
-[node name="portal" type="Button" parent="."]
-offset_left = 10.0
-offset_top = -256.0
-offset_right = 34.0
-offset_bottom = -224.0
-keep_pressed_outside = true
 
 [node name="pearl" parent="." instance=ExtResource("8_owglq")]
 y_sort_enabled = true
@@ -115,6 +96,23 @@ position = Vector2(232, -297)
 scale = Vector2(0.5, 0.5)
 starting_resources = null
 
+[node name="Instructions" type="Window" parent="."]
+title = "Instructions"
+position = Vector2i(-260, -200)
+size = Vector2i(150, 50)
+visible = false
+always_on_top = true
+
+[node name="Text" type="RichTextLabel" parent="Instructions"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 146.0
+offset_bottom = 46.0
+text = "welcome to game maker island!
+you are here because you have an Idea for a game. on this island, you can collect things to make your game. collect the sprites from the forest grown by generous artists, and the code bones from the skeleton of projects past! you’ll also need a good game engine, which is difficult to come by! you’ll need one that’s easy to use, but also one not involved in the military industrial complex… the only way to find such a rare gem may be to visit the demonic shrine in the tundra of the northeast…
+once you’ve collected everything for your game, visit the portal to a player on the center island! present the portal with your amazing, all original game, and a player will be able to tell you what they think!
+good luck!"
+
 [node name="Sign" type="Button" parent="."]
 offset_left = -202.0
 offset_top = -187.0
@@ -125,23 +123,24 @@ action_mode = 0
 icon = ExtResource("12_07tly")
 flat = true
 
-[node name="Instructions" type="Window" parent="Sign"]
-title = "Instructions"
-position = Vector2i(-260, -200)
-size = Vector2i(150, 50)
+[node name="UI" type="CanvasLayer" parent="."]
 visible = false
-always_on_top = true
-script = ExtResource("11_ec3xl")
 
-[node name="Text" type="RichTextLabel" parent="Sign/Instructions"]
-offset_left = 4.0
-offset_top = 4.0
-offset_right = 146.0
-offset_bottom = 46.0
-text = "welcome to game maker island!
-you are here because you have an Idea for a game. on this island, you can collect things to make your game. collect the sprites from the forest grown by generous artists, and the code bones from the skeleton of projects past! you’ll also need a good game engine, which is difficult to come by! you’ll need one that’s easy to use, but also one not involved in the military industrial complex… the only way to find such a rare gem may be to visit the demonic shrine in the tundra of the northeast…
-once you’ve collected everything for your game, visit the portal to a player on the center island! present the portal with your amazing, all original game, and a player will be able to tell you what they think!
-good luck!"
+[node name="InventoryDisplay" parent="UI" instance=ExtResource("10_rs0ue")]
+anchors_preset = -1
+anchor_left = 0.007
+anchor_right = 0.268
+anchor_bottom = 0.384
+offset_left = -0.0640002
+offset_top = 1.0
+offset_right = -122.736
+offset_bottom = -214.832
+
+[node name="Hotbar" parent="UI" instance=ExtResource("10_bf3ss")]
+offset_left = 2.0
+offset_top = 207.0
+offset_right = 389.0
+offset_bottom = 216.0
 
 [node name="map" type="TileMap" parent="."]
 z_index = -5
@@ -163,7 +162,7 @@ layer_2/y_sort_enabled = true
 layer_2/tile_data = PackedInt32Array(-1048590, 3, 1, -1048589, 65539, 1, -1245171, 5, 0, -1245170, 65541, 0, -1245169, 131077, 0, -1179635, 131077, 4, -1179633, 65541, 4, -1179636, 5, 0, -1179632, 131077, 0, -1114100, 5, 1, -1114096, 131077, 1, -1048563, 196613, 1, -1048562, 262149, 1, -1048561, 327685, 1, -1048564, 5, 2, -1048560, 131077, 2, -1179634, 393221, 3, -1114098, 393221, 3, -1114099, 393221, 3, -1114097, 393221, 3, -851949, 393222, 10, -786413, 393222, 11, -851948, 458758, 10, -786412, 458758, 11, -1048565, 327686, 10, -983029, 327686, 11, -1179630, 327686, 10, -1114094, 327686, 11, -1179638, 196614, 11, -917483, 196614, 11, -851955, 131078, 11, -917487, 65542, 11, -1114102, 65542, 11, -983020, 65542, 11, -786414, 65542, 11)
 metadata/_edit_lock_ = true
 
+[connection signal="pressed" from="portal" to="PortalWindow" method="_on_portal_pressed"]
 [connection signal="pressed" from="PortalWindow/GridContainer/shiny idea button" to="." method="_on_shiny_idea_button_pressed"]
 [connection signal="pressed" from="PortalWindow/GridContainer/your idea button" to="." method="_on_your_idea_button_pressed"]
-[connection signal="pressed" from="portal" to="PortalWindow" method="_on_portal_pressed"]
-[connection signal="pressed" from="Sign" to="Sign/Instructions" method="_on_sign_pressed"]
+[connection signal="pressed" from="Sign" to="Instructions" method="_on_sign_pressed"]
