@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://c6ooks7r275sw" path="res://resources/items/item_engine.tscn" id="3_qir7v"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8ff4p"]
-radius = 8.0
-height = 38.0
+radius = 25.0
+height = 69.9777
 
 [node name="demonic_shrine" type="StaticBody2D"]
 script = ExtResource("1_648ru")
@@ -21,4 +21,5 @@ offset = Vector2(3.5, 2.08165e-12)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 42)
+rotation = 1.59605
 shape = SubResource("CapsuleShape2D_8ff4p")

@@ -21,7 +21,7 @@ script = ExtResource("4_8gfl2")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_hxb3u")]
 y_sort_enabled = true
-position = Vector2(-187, -243)
+position = Vector2(-184, -144)
 scale = Vector2(3, 3)
 
 [node name="sprite tree" parent="." instance=ExtResource("6_55g2w")]
@@ -35,8 +35,8 @@ offset_right = 32.0
 offset_bottom = -233.0
 keep_pressed_outside = true
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(25, -272)
+[node name="Sprite2D" type="Sprite2D" parent="portal"]
+position = Vector2(11, -14)
 texture = ExtResource("3_p0xef")
 
 [node name="pearl" parent="." instance=ExtResource("8_owglq")]
@@ -67,23 +67,6 @@ starting_resources = null
 position = Vector2(232, -297)
 scale = Vector2(0.5, 0.5)
 starting_resources = null
-
-[node name="Instructions" type="Window" parent="."]
-title = "Instructions"
-position = Vector2i(-260, -200)
-size = Vector2i(150, 50)
-visible = false
-always_on_top = true
-
-[node name="Text" type="RichTextLabel" parent="Instructions"]
-offset_left = 4.0
-offset_top = 4.0
-offset_right = 146.0
-offset_bottom = 46.0
-text = "welcome to game maker island!
-you are here because you have an Idea for a game. on this island, you can collect things to make your game. collect the sprites from the forest grown by generous artists, and the code bones from the skeleton of projects past! you’ll also need a good game engine, which is difficult to come by! you’ll need one that’s easy to use, but also one not involved in the military industrial complex… the only way to find such a rare gem may be to visit the demonic shrine in the tundra of the northeast…
-once you’ve collected everything for your game, visit the portal to a player on the center island! present the portal with your amazing, all original game, and a player will be able to tell you what they think!
-good luck!"
 
 [node name="Sign" type="Button" parent="."]
 offset_left = -202.0
@@ -134,4 +117,4 @@ layer_2/tile_data = PackedInt32Array(-1048590, 3, 1, -1048589, 65539, 1, -124517
 metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="portal" to="." method="_on_portal_pressed"]
-[connection signal="pressed" from="Sign" to="Instructions" method="_on_sign_pressed"]
+[connection signal="pressed" from="Sign" to="." method="_on_sign_pressed"]

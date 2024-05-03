@@ -14,8 +14,10 @@ func _ready():
 	player_inventory.connect("resource_count_changed", _on_player_inventory_resource_count_changed)
 
 func _on_player_inventory_resource_count_changed(_type : ItemResource, _new_count : int) -> void:
-	pass
+	print("recieved") # this is just for debugging! 
+	# still don't know why number isn't updating. oh well.
 	
 func update_count(count : int):
 	label.text = str(count)
+	# why do u not work :(((
 	

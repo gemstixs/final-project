@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://qe8no4trwafb" path="res://resources/items/item_shiny_idea.tscn" id="3_ttxpg"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nfa3d"]
-radius = 16.0
-height = 32.0
+radius = 24.0
+height = 50.6667
 
 [node name="pearl" type="StaticBody2D"]
 position = Vector2(2, 1)
@@ -20,5 +20,5 @@ item_type = ExtResource("3_ttxpg")
 texture = ExtResource("1_hlq0s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(3.09944e-06, -6.67572e-06)
+position = Vector2(-7.94746e-08, 0)
 shape = SubResource("CapsuleShape2D_nfa3d")
