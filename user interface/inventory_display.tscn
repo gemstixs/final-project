@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://bkyjky2p2agt2"]
+[gd_scene load_steps=6 format=3 uid="uid://bkyjky2p2agt2"]
 
+[ext_resource type="Texture2D" uid="uid://dtmm7ppvmswi8" path="res://ideas/shiny_idea.png" id="2_nahwy"]
 [ext_resource type="Script" path="res://user interface/Item_Display.gd" id="2_x3fwr"]
 [ext_resource type="Texture2D" uid="uid://bl4p5l4plrwkp" path="res://resources/items/item_sprite.png" id="3_7qiu2"]
 [ext_resource type="Texture2D" uid="uid://b3qe4ouk885uk" path="res://resources/items/item_bone.png" id="4_33uur"]
@@ -9,9 +10,26 @@
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 7.0
+offset_top = 1.0
+offset_right = -949.0
+offset_bottom = -612.0
 grow_horizontal = 2
 grow_vertical = 2
-columns = 3
+columns = 4
+
+[node name="PearlDisplay" type="HBoxContainer" parent="."]
+layout_mode = 2
+script = ExtResource("2_x3fwr")
+
+[node name="TextureRect" type="TextureRect" parent="PearlDisplay"]
+layout_mode = 2
+texture = ExtResource("2_nahwy")
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="PearlDisplay"]
+layout_mode = 2
+text = "0"
 
 [node name="SpriteDisplay" type="HBoxContainer" parent="."]
 layout_mode = 2

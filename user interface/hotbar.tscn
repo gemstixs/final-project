@@ -1,37 +1,23 @@
-[gd_scene load_steps=6 format=3 uid="uid://bn4hryf1r4jon"]
+[gd_scene load_steps=5 format=3 uid="uid://bn4hryf1r4jon"]
 
 [ext_resource type="Script" path="res://user interface/hotbar.gd" id="1_c3r0s"]
 [ext_resource type="Texture2D" uid="uid://cn8f57xk4ruwh" path="res://ideas/your_idea.png" id="2_2j4bb"]
 [ext_resource type="PackedScene" uid="uid://diuovwxi3rsja" path="res://user interface/idea_button.tscn" id="2_7nbf6"]
-[ext_resource type="Resource" uid="uid://c5j0aho8kuwxn" path="res://ideas/shiny_idea.tres" id="3_suc6w"]
 [ext_resource type="Resource" uid="uid://dvihiuq1pwweo" path="res://ideas/your_idea.tres" id="5_vfbu8"]
 
 [node name="Hotbar" type="Control" groups=["hotbar"]]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 997.0
-offset_bottom = 683.0
+offset_left = 488.0
+offset_top = 577.0
+offset_right = 688.0
+offset_bottom = 606.0
 script = ExtResource("1_c3r0s")
 
 [node name="GridContainer" type="GridContainer" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.853
-anchor_right = 0.5
-anchor_bottom = 0.853
-offset_left = -92.5
-offset_top = 8.74198
-offset_right = 360.5
-offset_bottom = 76.742
-grow_horizontal = 2
-grow_vertical = 0
-scale = Vector2(0.65, 0.65)
-columns = 2
-
-[node name="ShinyNewIdeaButton" parent="GridContainer" instance=ExtResource("2_7nbf6")]
-layout_mode = 2
-idea = ExtResource("3_suc6w")
+layout_mode = 0
+offset_right = 118.0
+offset_bottom = 40.0
 
 [node name="YourIdeaButton" parent="GridContainer" instance=ExtResource("2_7nbf6")]
 layout_mode = 2

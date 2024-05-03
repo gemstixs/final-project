@@ -1,16 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://dgeqsgaaylfuv"]
+[gd_scene load_steps=6 format=3 uid="uid://dgeqsgaaylfuv"]
 
-[ext_resource type="Script" path="res://resources/pearl.gd" id="1_8dhyt"]
 [ext_resource type="Texture2D" uid="uid://dhxbnux7rxt28" path="res://art/Caury_pearl2_ground_shadow.png" id="1_hlq0s"]
+[ext_resource type="Script" path="res://resources/ResourceNode.gd" id="1_wnbly"]
+[ext_resource type="Resource" uid="uid://cltbu3rxqylp5" path="res://resources/types/harvestable.tres" id="2_qbib1"]
+[ext_resource type="PackedScene" uid="uid://qe8no4trwafb" path="res://resources/items/item_shiny_idea.tscn" id="3_ttxpg"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nfa3d"]
 radius = 16.0
 height = 32.0
 
-[node name="pearl" type="Area2D"]
+[node name="pearl" type="StaticBody2D"]
 position = Vector2(2, 1)
 scale = Vector2(0.75, 0.75)
-script = ExtResource("1_8dhyt")
+script = ExtResource("1_wnbly")
+node_types = Array[Resource("res://resources/types/resourcenode_type.gd")]([ExtResource("2_qbib1")])
+item_type = ExtResource("3_ttxpg")
 
 [node name="oyster" type="Sprite2D" parent="."]
 texture = ExtResource("1_hlq0s")
