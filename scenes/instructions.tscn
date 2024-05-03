@@ -26,10 +26,10 @@ offset_bottom = 221.0
 
 [node name="Label" type="Label" parent="."]
 y_sort_enabled = true
-offset_left = -165.0
-offset_top = -194.0
-offset_right = 265.0
-offset_bottom = 219.0
+offset_left = -164.0
+offset_top = -193.0
+offset_right = 266.0
+offset_bottom = 220.0
 text = "welcome to game maker island!
 you are here because you have an Idea for a game. on 
 this island, you can collect things to make your game. 
@@ -44,7 +44,7 @@ visit the portal to a player on the center island!
 present the portal with your amazing, original game, 
 and a player will be able to tell you what they think!
 good luck!
-p.s. there's an ancient legend of a shiny, better idea
+p.s. an ancient legend speaks of a shiny, better idea
 in the oyster above the waterfall..."
 horizontal_alignment = 1
 
