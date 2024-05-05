@@ -68,6 +68,19 @@ position = Vector2(232, -297)
 scale = Vector2(0.5, 0.5)
 starting_resources = null
 
+[node name="ArtistCredits" type="Button" parent="."]
+y_sort_enabled = true
+offset_left = -145.0
+offset_top = 38.0
+offset_right = -127.0
+offset_bottom = 51.0
+
+[node name="Sprite2D" type="Sprite2D" parent="ArtistCredits"]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(11, 7)
+texture = ExtResource("12_07tly")
+
 [node name="Sign" type="Button" parent="."]
 offset_left = -193.0
 offset_top = -175.0
@@ -120,4 +133,5 @@ layer_2/tile_data = PackedInt32Array(-1048590, 3, 1, -1048589, 65539, 1, -124517
 metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="portal" to="." method="_on_portal_pressed"]
+[connection signal="pressed" from="ArtistCredits" to="." method="_on_artist_credits_pressed"]
 [connection signal="pressed" from="Sign" to="." method="_on_sign_pressed"]
